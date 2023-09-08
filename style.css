@@ -1,0 +1,60 @@
+
+.The-background{
+    background-color: rgba(149, 255, 35, 0.516); 
+}
+.Scrolling{
+    scroll-behavior: smooth;
+}
+.background-image{
+    background-image: url(https://th.bing.com/th/id/OIP.EYbtSJY0NzZDkfECM29pBwHaD4?w=329&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7);
+
+    min-height: 430px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+.Box{
+    position: absolute;
+    margin: 30px;
+    width: auto;
+
+}
+.Nav{
+    overflow: hidden;
+    background-color: rgba(74, 253, 92, 0.237);
+}
+.Nav a{
+    float: left;
+    color: yellow;
+    text-align: center; 
+    padding: 14px 16px;
+    text-decoration: dotted;
+    font-size: 7px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.Nav a:hover{
+    background-color: rgba(255, 77, 166, 0.589);
+    color: honeydew;
+}
+.Nav a:active{
+    background-color: rgba(80, 229, 255, 0.401);
+    color: rgba(174, 15, 253, 0.895);
+}
+.The-words{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    padding-left: 50pt;
+    padding-right: 50pt;
+    font-size: 20pt;
+}
