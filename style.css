@@ -1,60 +1,274 @@
 
 .The-background{
-    background-color: rgba(149, 255, 35, 0.516); 
+    background: linear-gradient(45deg,rgb(156, 12, 246),rgb(165, 20, 255),rgba(242, 227, 90, 0.881),rgb(247, 239, 120));
+    animation:color 20s ease-in-out infinite;
+    height: 200vh;
+    width:20%;
+    background-size: 300% 300%;
+    transform: scale(0.8);
+    transform-origin: 0 0;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
 .Scrolling{
     scroll-behavior: smooth;
 }
 .background-image{
-    background-image: url(https://th.bing.com/th/id/OIP.EYbtSJY0NzZDkfECM29pBwHaD4?w=329&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7);
-
-    min-height: 430px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
+    /* border: solid 3px rgb(0, 200, 255); */
+    
 }
 .Box{
+    
+    display:flex;
     position: absolute;
-    margin: 30px;
-    width: auto;
+    top:3.5em;
+    width:100em;
+    /* border: solid 3px red; */
+    height:250px;
+    left: 0em;
+    right:0em
+    
+}
+.name{
+    display: flex;
+    position: absolute;
+    width: 8em;
+    height: 1em;
+    /* border: solid 3px purple; */
+    top:2.2em;
+    left: 8em;
+    font-size: 70pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(253, 0, 42);
+    /* font-weight: 100;
+    text-shadow:
+    0 0 5px #ffa280,
+    0 0 10px #ff696b,
+    0 0 15px #ed7aff,
+    0 0 20px #00ffcc,
+    0 0 30px #c16df5,
+    0 0 40px #f22a8e; */
+
+      
+}
+.name::before{
+    content:'Kayleah Daniels';
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(5px);
+    left: 3
+}
+.box{
+    display:inline-flex;
+    filter: brightness(200%)
+}
+/* .gradient{
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+} */
+
+
+
+.languages{
+    display:flex;
+    position: absolute;
+    /* border: solid 3px rgb(5, 253, 22); */
+    top: 12em;
+    left:13.5em;
+    
+}
+.the-words{
+    display:flex;
+    position: absolute;
+    top:8em;
+    left:16em;
+    border: solid 3px rgb(128, 128, 255);
+    font-size: 35pt;
+}
+.Nav{    
+    display:flex;
+    position: absolute;
+    left:3em;
+    width:12.3em;
+    top:2em;
+    bottom:0em;
+    height:2em;
+    
+}
+.Nav.active{
+    height: 420px
+}
+.projects{
+    display:flex;
+    position:absolute;
+    top:20em;
+    left: 20em;
+    width:5em;
+    border:solid 3px rgb(136, 0, 255);
+    margin:0%;
+    
+}
+.contacts{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    text-align: center;
+    top:100em;
+    align-content: center;
+    left: 33em;
+    width:7em;
+    
+    
 
 }
-.Nav{
-    overflow: hidden;
-    background-color: rgba(74, 253, 92, 0.237);
+
+.about_me_title{
+    display:flex;
+    position: absolute;
+    top:0em;
+    left:15.55em;
+    /* border:solid 3px rgb(15, 197, 242); */
+}
+
+.about_me_para{
+    display:flex;
+    position: relative;
+    justify-content: center;
+    align-content: space-evenly;
+    left:7.5em;
+    top:5em;
+    height:10em;
+    /* border:solid 3px rgb(238, 64, 151); */
+}
+.aboutme{
+    display:flex;
+    position: relative;
+    top:25em;
+    left:3.5em;
+    font-size: 20pt;
+    width:56em;
+    height:20em;
+    /* border:solid 3px rgb(200, 242, 15); */
+    text-align: center;
+    line-height: 2em
+}
+.text_lang{
+    /* border:solid 3px red; */
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    text-align: center;
+    top:35em;
+    left:3em;
+    width:65em;
+    font-size: 20pt;
+    
+}
+.lang_pics{ 
+    
+    display:flex;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transition: transform 0.5 ease-in;
+    width:5em;
+    -webkit-box-reflect: below .5px linear-gradient(transparent, #0008);
+    outline: none;
+    line-height:0em;
+    left: 0em
+}
+.lang_pics:hover{
+    animation:animate 1s linear;
+    -webkit-box-reflect: below 6px linear-gradient(transparent, #0008);
+    transform:scale(1.1)
+}
+@keyframes animate{
+    1%{
+        color:rgb(163, 29, 247);
+        box-shadow:none
+    }
+    1%{
+        color:white;
+        box-shadow: 0 0 10px rgb(65, 211, 255),
+        0 0 20px rgb(168, 80, 178),
+        0 0 40px rgb(147, 74, 146),
+        0 0 50px rgb(114, 80, 117),
+        0 0 140px rgb(175, 23, 245);
+    }
+}
+.contact_me{
+    
+    border:solid 3px rgb(10, 0, 9);
+    left: 10em
+}
+.options{
+    display: flex;
+    position:relative;
+    background-color: #7473731b;
+    /* border:solid 3px red; */
+    
 }
 .Nav a{
-    float: left;
-    color: yellow;
-    text-align: center; 
-    padding: 14px 16px;
-    text-decoration: dotted;
-    font-size: 7px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    display:flex;
+    position:relative;
+    text-align: center ;
+    color: rgb(251, 246, 255);
+    padding: .5em 3em;
+    font-size: 13pt;
+    /* font-family: ; */
+    width:44em;
+    height:3em;
+    top:-2em;
+    text-decoration: none;
+    /* bottom:0em; */
+
 }
+
 .Nav a:hover{
-    background-color: rgba(255, 77, 166, 0.589);
+    background-color: rgba(80, 77, 255, 0.589);
     color: honeydew;
 }
 .Nav a:active{
-    background-color: rgba(80, 229, 255, 0.401);
-    color: rgba(174, 15, 253, 0.895);
+    background-color: rgba(248, 248, 6, 0.684);
+    color: rgba(0, 0, 0, 0.895);
 }
-.The-words{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 45px;
 
+.animated-image{
+    border-radius: 50%;
+    width: 55px;
+    margin-left: 35px;
+    transition: ease-in;
 }
-.text{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    text-align: center;
-    padding-left: 50pt;
-    padding-right: 50pt;
-    font-size: 20pt;
+.gmail_image, .gmail_image:visited{
+    border-radius: 5em;
+    width:2em;
+    height:2em;
+    animation:animate 1s linear;
+    transform:scale(1.1);
+    bottom:3em
+}
+
+.Projects{
+    display:flex;
+    position:relative;
+    top:55em;
+    left:-18em
 }
