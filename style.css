@@ -1,22 +1,11 @@
 
-.The-background{
+.The_background{
     height: 200vh;
     width:20%;
     background-size: 300% 300%;
     transform: scale(0.8);
     transform-origin: 0 0; 
     background: black;
-}
-@keyframes color{
-    0%{
-        background-position: 0 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0 50%;
-    }
 }
 .Scrolling{
     scroll-behavior: smooth;
@@ -160,7 +149,49 @@
     width:5em;
     /* border:3px rgb(64, 255, 0) solid */
 }
+#dark_button{
+    border:solid 1px black;
+    height:135px;
+    border-radius: 2px;
+    display: flex;
+    align-content: center;
+    /* font-family:'Times New Roman', Times, serif; */
+}
+.dark{
+    background-color: white;
+    
+    
+}
+.DM{
+    background-color: #7473731b;
+    display: flex;
+    align-content: center;
+}
+.dark .DM :hover{
+    border:none;
+}
+.dark .DM{
+    color:black;
+    display: flex;
+    align-content: center;
 
+    font-family:'Times New Roman', Times, serif;
+}
+
+.dark .about_me_para{
+    color: black;
+}
+
+.dark .about_me_title{
+    color:black;
+}
+.dark .options{
+    color: rgb(0, 0, 0);
+    border: solid 1px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+}
 .about_me_para{
     display:flex;
     position: relative;
@@ -242,7 +273,6 @@
     }
 } */
 .contact_me{
-    
     border:solid 3px rgb(0, 0, 0);
     left: 20em;
     padding-bottom: 10em;
@@ -254,9 +284,9 @@
     /* border:solid 3px red; */
     
 }
-.Nav a{
+.Nav a, .DM{
     display: flex;
-    position:relative;
+    position: relative;
     text-align: center ;
     color: rgb(255, 255, 255);
     padding: .5em 3em; 
@@ -271,11 +301,11 @@
 
 }
 
-.Nav a:hover{
+.Nav :hover{
     background-color: rgba(80, 77, 255, 0.589);
     color: honeydew;
 }
-.Nav a:active{
+.Nav :active{
     background-color: rgba(248, 248, 6, 0.684);
     color: transparent
 }
